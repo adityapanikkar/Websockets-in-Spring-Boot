@@ -20,13 +20,13 @@ additional things needed for this are :
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-websocket-chat-demo.git
+git clone https://github.com/adityapanikkar/Websockets-in-Spring-Boot.git
 ```
 
 **2. Build and run the app using maven**
 
 ```bash
-cd spring-boot-websocket-chat-demo
+cd Websockets-in-Spring-Boot
 mvn package
 java -jar target/websocket-demo-0.0.1-SNAPSHOT.jar
 ```
@@ -37,8 +37,4 @@ Alternatively, you can run the app directly without packaging it like so -
 mvn spring-boot:run
 ```
 
-## Learn More
 
-You can find the tutorial for this application on my blog -
-
-https://www.callicoder.com/spring-boot-websocket-chat-example/
