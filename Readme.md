@@ -1,8 +1,13 @@
 ## Spring Boot WebSocket Chat Appplication
 
-You can checkout the live version of the application at https://spring-ws-chat.herokuapp.com/
+This was developed referring to code and instructions given by https://www.callicoder.com/spring-boot-websocket-chat-example/
 
-![App Screenshot](screenshot.png)
+The additions i made are sending some alerts from the database
+
+additional things needed for this are :
+1.A database connection(defined in application.properties)
+2.A database Pojo (Part of the pojo package)
+3.SQL queries to fetch data (All these are a part oof the dao package)
 
 ## Requirements
 
