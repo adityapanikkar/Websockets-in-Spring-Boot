@@ -59,7 +59,8 @@ function sendMessage(event) {
         var chatMessage = {
             sender: username,
             content: messageInput.value,
-            type: 'CHAT'
+            type: 'CHAT',
+            alertmsg:messageInput.value
         };
 
         stompClient.send("/app/chat.sendMessage", {}, JSON.stringify(chatMessage));
@@ -98,7 +99,9 @@ function onMessageReceived(payload) {
 
     var textElement = document.createElement('p');
     var messageText = document.createTextNode(message.content);
+    var messageText1 = document.createTextNode(message.alertmsg);
     textElement.appendChild(messageText);
+    textElement.appendChild(messageText1);
 
     messageElement.appendChild(textElement);
 

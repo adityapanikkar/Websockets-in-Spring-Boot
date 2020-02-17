@@ -7,6 +7,7 @@ public class ChatMessage {
     private MessageType type;
     private String content;
     private String sender;
+    private String alertmsg;
 
     public enum MessageType {
         CHAT,
@@ -37,4 +38,13 @@ public class ChatMessage {
     public void setSender(String sender) {
         this.sender = sender;
     }
+
+    public String getAlertmsg() {
+        return alertmsg;
+    }
+
+    public void setAlertmsg(String alertmsg) {
+        this.alertmsg = alertmsg;
+    }
+
 }
